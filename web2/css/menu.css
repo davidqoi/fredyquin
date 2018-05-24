@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.5px;
+}
+.section__titulo{
+    text-align: center;
+    font-size: 40px;
+    color: #fba919;
+}
+
+/*estilos del heades*/
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.menu ul{
+    background: #ce852a;
+    display: flex;
+    list-style: none;
+}
+.logo, .icon-menu{
+    margin: 5px;
+    font-size: 30px;
+    color: black;
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #fba919;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*estilos de menu*/
+.nav{
+    display: flex;
+    position: absolute;
+    top: 110px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.4s;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link {
+    display: block;
+    padding: 25px;
+    font-size: 25px;
+    background: #fba919;
+    text-decoration: none;
+    color: #fff;
+}
+.menu__link:hover, .select {
+    background: white;
+    color: #fba919;
+}
+.mostrar{
+    left: 0;
+}
+/*estilos de banner*/
+
+.baner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 30px;
+}
+.baner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.baner__txt{
+    display: none;
+}
+/*estilos de info*/
+
+.info__columna{
+    background: #fba919;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+/*estilos de cursos*/
+.cursos__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+.cursos__descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:#fff;
+    text-align: justify;
+    background: rgba(0,0,0,.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+.cursos__titulo{
+    font-size: 25px;
+    margin: 5px 0;
+    
+}
+
+/*estilos footes*/
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+.footer .social [class^="icon-"]{
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+}
+/*estilos responsive*/
+@media(min-width:480px){
+    
+    .logo {
+        text-align: center;
+        font-size: 50px;
+    }
+    .baner__titulo{
+        font-size: 40px;
+        margin: 5px 0;
+         }
+    .baner__txt{
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+    }
+    .info, .cursos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -80px;
+        
+    }
+    .info__columna{
+        width: 32%;   
+    }
+    .info__titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+     .section__titulo{
+        width: 100%;
+    }
+    .cursos{
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .cursos__columna{
+        width: 49%;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

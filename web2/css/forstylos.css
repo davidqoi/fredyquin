@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.5px;
+}
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.menu ul{
+    background: #ce852a;
+    display: flex;
+    list-style: none;
+}
+.logo, .icon-menu{
+    margin: 5px;
+    font-size: 30px;
+    color: black;
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #fba919;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*estilos de menu*/
+.nav{
+    display: flex;
+    position: absolute;
+    top: 110px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.4s;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link {
+    display: block;
+    padding: 25px;
+    font-size: 25px;
+    background: #fba919;
+    text-decoration: none;
+    color: #fff;
+}
+.menu__link:hover, .select {
+    background: white;
+    color: #fba919;
+}
+.mostrar{
+    left: 0;
+}
+
+BODY{
+    background-image: url(/img/Paisaje.jpg.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+form ,iframe{
+    width: 1050px;
+    margin: auto;
+    background: rgba(0,0,0,0.8);
+    padding: 10PX 20PX;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+h2{
+    color:#fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+.footer .social [class^="icon-"]{
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 100%;
+    width: 60px;
+    height: 50px;
+    line-height: 30px;
+}
